@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Tue Feb 05 17:32:12 2019
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : de2_70
+Top-level Entity Name : TP801_TOP
+Family : Cyclone II
+Total logic elements : 3,898 / 68,416 ( 6 % )
+    Total combinational functions : 3,119 / 68,416 ( 5 % )
+    Dedicated logic registers : 1,588 / 68,416 ( 2 % )
+Total registers : 1588
+Total pins : 90 / 622 ( 14 % )
+Total virtual pins : 0
+Total memory bits : 56,832 / 1,152,000 ( 5 % )
+Embedded Multiplier 9-bit elements : 0 / 300 ( 0 % )
+Total PLLs : 2 / 4 ( 50 % )

@@ -1,0 +1,338 @@
+Partition Merge report for de2_70
+Tue Feb 05 17:32:12 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge RAM Summary
+  8. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Partition Merge Summary                                                               ;
++------------------------------------+--------------------------------------------------+
+; Partition Merge Status             ; Successful - Tue Feb 05 17:32:12 2019            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; de2_70                                           ;
+; Top-level Entity Name              ; TP801_TOP                                        ;
+; Family                             ; Cyclone II                                       ;
+; Total logic elements               ; 3,898 / 68,416 ( 6 % )                           ;
+;     Total combinational functions  ; 3,119 / 68,416 ( 5 % )                           ;
+;     Dedicated logic registers      ; 1,588 / 68,416 ( 2 % )                           ;
+; Total registers                    ; 1588                                             ;
+; Total pins                         ; 90 / 622 ( 14 % )                                ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 56,832 / 1,152,000 ( 5 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 300 ( 0 % )                                  ;
+; Total PLLs                         ; 2 / 4 ( 50 % )                                   ;
++------------------------------------+--------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Post-Fit          ; Post-Fit               ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                                                              ;
++-----------+---------------+-----------+----------------+-------------------+-------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Name      ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection             ; Details                                                                                                                                                        ;
++-----------+---------------+-----------+----------------+-------------------+-------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; CPU_A[0]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[0]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[10] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[10] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[11] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_A[11] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_A[12] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_A[12] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_A[13] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_A[13] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_A[14] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_A[14] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_A[15] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_A[15] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_A[1]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[1]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[2]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[2]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[3]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[3]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[4]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[4]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[5]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[5]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[6]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[6]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[7]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[7]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[8]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[8]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[9]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_A[9]  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DI[0] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[0]~8                   ; N/A                                                                                                                                                            ;
+; CPU_DI[0] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[0]~8                   ; N/A                                                                                                                                                            ;
+; CPU_DI[1] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[1]~10                  ; N/A                                                                                                                                                            ;
+; CPU_DI[1] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[1]~10                  ; N/A                                                                                                                                                            ;
+; CPU_DI[2] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[2]~11                  ; N/A                                                                                                                                                            ;
+; CPU_DI[2] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[2]~11                  ; N/A                                                                                                                                                            ;
+; CPU_DI[3] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[3]~12                  ; N/A                                                                                                                                                            ;
+; CPU_DI[3] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[3]~12                  ; N/A                                                                                                                                                            ;
+; CPU_DI[4] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[4]~13                  ; N/A                                                                                                                                                            ;
+; CPU_DI[4] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[4]~13                  ; N/A                                                                                                                                                            ;
+; CPU_DI[5] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[5]~14                  ; N/A                                                                                                                                                            ;
+; CPU_DI[5] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[5]~14                  ; N/A                                                                                                                                                            ;
+; CPU_DI[6] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[6]~15                  ; N/A                                                                                                                                                            ;
+; CPU_DI[6] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[6]~15                  ; N/A                                                                                                                                                            ;
+; CPU_DI[7] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[7]~16                  ; N/A                                                                                                                                                            ;
+; CPU_DI[7] ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[7]~16                  ; N/A                                                                                                                                                            ;
+; CPU_DO[0] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[0] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[1] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[1] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[2] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[2] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[3] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[3] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[4] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[4] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[5] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[5] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[6] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[6] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[7] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_DO[7] ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The pre-synthesis tap must be preserved by Analysis & Synthesis before it can be tapped.  Set the partition's netlist type to Source and recompile.            ;
+; CPU_IORQ  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_IORQ  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_MREQ  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_MREQ  ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_RD    ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_RD    ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_WR    ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CPU_WR    ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; LED[0]    ; pre-synthesis ; connected ; Top            ; post-fit          ; RESET_DE:RESET_DE|RESET_N     ; N/A                                                                                                                                                            ;
+; LED[0]    ; pre-synthesis ; connected ; Top            ; post-fit          ; RESET_DE:RESET_DE|RESET_N     ; N/A                                                                                                                                                            ;
+; LED[1]    ; pre-synthesis ; connected ; Top            ; post-fit          ; Equal12~14                    ; N/A                                                                                                                                                            ;
+; LED[1]    ; pre-synthesis ; connected ; Top            ; post-fit          ; Equal12~14                    ; N/A                                                                                                                                                            ;
+; LED[2]    ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND             ; N/A                                                                                                                                                            ;
+; LED[2]    ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND             ; N/A                                                                                                                                                            ;
+; LED[3]    ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND             ; N/A                                                                                                                                                            ;
+; LED[3]    ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND             ; N/A                                                                                                                                                            ;
+; LED[4]    ; pre-synthesis ; connected ; Top            ; post-fit          ; AUDIO_IF:AUD_IF|oCASS_IN_R~10 ; N/A                                                                                                                                                            ;
+; LED[4]    ; pre-synthesis ; connected ; Top            ; post-fit          ; AUDIO_IF:AUD_IF|oCASS_IN_R~10 ; N/A                                                                                                                                                            ;
+; LED[5]    ; pre-synthesis ; connected ; Top            ; post-fit          ; AUDIO_IF:AUD_IF|oCASS_IN_L~0  ; N/A                                                                                                                                                            ;
+; LED[5]    ; pre-synthesis ; connected ; Top            ; post-fit          ; AUDIO_IF:AUD_IF|oCASS_IN_L~0  ; N/A                                                                                                                                                            ;
+; LED[6]    ; pre-synthesis ; connected ; Top            ; post-fit          ; AUDIO_IF:AUD_IF|oCASS_IN_L~0  ; N/A                                                                                                                                                            ;
+; LED[6]    ; pre-synthesis ; connected ; Top            ; post-fit          ; AUDIO_IF:AUD_IF|oCASS_IN_L~0  ; N/A                                                                                                                                                            ;
+; LED[7]    ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND             ; N/A                                                                                                                                                            ;
+; LED[7]    ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND             ; N/A                                                                                                                                                            ;
+; LED[8]    ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND             ; N/A                                                                                                                                                            ;
+; LED[8]    ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND             ; N/A                                                                                                                                                            ;
+; LED[9]    ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND             ; N/A                                                                                                                                                            ;
+; LED[9]    ; pre-synthesis ; connected ; Top            ; post-fit          ; QIC_SIGNALTAP_GND             ; N/A                                                                                                                                                            ;
+; trap      ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; trap      ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                           ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; CLK50MHZ  ; post-fitting  ; connected ; Top            ; post-fit          ; CLK50MHZ                      ; N/A                                                                                                                                                            ;
++-----------+---------------+-----------+----------------+-------------------+-------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                                         ;
++---------------------------------------------+----------------------+-----------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top                  ; sld_hub:auto_hub      ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+----------------------+-----------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 2800 / 68416 ( 4 % ) ; 145 / 68416 ( < 1 % ) ; 966 / 68416 ( 1 % )            ; 0 / 68416 ( 0 % )              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Total combinational functions               ; 2609                 ; 121                   ; 389                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;                      ;                       ;                                ;                                ;
+;     -- 4 input functions                    ; 1739                 ; 52                    ; 174                            ; 0                              ;
+;     -- 3 input functions                    ; 558                  ; 32                    ; 129                            ; 0                              ;
+;     -- <=2 input functions                  ; 312                  ; 37                    ; 86                             ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Logic elements by mode                      ;                      ;                       ;                                ;                                ;
+;     -- normal mode                          ; 2403                 ; 113                   ; 344                            ; 0                              ;
+;     -- arithmetic mode                      ; 206                  ; 8                     ; 45                             ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Total registers                             ; 687                  ; 86                    ; 815                            ; 0                              ;
+;     -- Dedicated logic registers            ; 687 / 68416 ( 1 % )  ; 86 / 68416 ( < 1 % )  ; 815 / 68416 ( 1 % )            ; 0 / 68416 ( 0 % )              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Virtual pins                                ; 0                    ; 0                     ; 0                              ; 0                              ;
+; I/O pins                                    ; 90                   ; 0                     ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 300 ( 0 % )      ; 0 / 300 ( 0 % )       ; 0 / 300 ( 0 % )                ; 0 / 300 ( 0 % )                ;
+; Total memory bits                           ; 32768                ; 0                     ; 24064                          ; 0                              ;
+; Total RAM block bits                        ; 36864                ; 0                     ; 27648                          ; 0                              ;
+; JTAG                                        ; 1 / 1 ( 100 % )      ; 0 / 1 ( 0 % )         ; 0 / 1 ( 0 % )                  ; 0 / 1 ( 0 % )                  ;
+; PLL                                         ; 0 / 4 ( 0 % )        ; 0 / 4 ( 0 % )         ; 0 / 4 ( 0 % )                  ; 2 / 4 ( 50 % )                 ;
+; M4K                                         ; 8 / 250 ( 3 % )      ; 0 / 250 ( 0 % )       ; 6 / 250 ( 2 % )                ; 0 / 250 ( 0 % )                ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Connections                                 ;                      ;                       ;                                ;                                ;
+;     -- Input Connections                    ; 25                   ; 128                   ; 1152                           ; 2                              ;
+;     -- Registered Input Connections         ; 23                   ; 97                    ; 931                            ; 0                              ;
+;     -- Output Connections                   ; 1127                 ; 154                   ; 2                              ; 24                             ;
+;     -- Registered Output Connections        ; 0                    ; 153                   ; 0                              ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Internal Connections                        ;                      ;                       ;                                ;                                ;
+;     -- Total Connections                    ; 12893                ; 807                   ; 4657                           ; 26                             ;
+;     -- Registered Connections               ; 4720                 ; 585                   ; 3444                           ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; External Connections                        ;                      ;                       ;                                ;                                ;
+;     -- Top                                  ; 0                    ; 119                   ; 1007                           ; 26                             ;
+;     -- sld_hub:auto_hub                     ; 119                  ; 16                    ; 147                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 1007                 ; 147                   ; 0                              ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 26                   ; 0                     ; 0                              ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Partition Interface                         ;                      ;                       ;                                ;                                ;
+;     -- Input Ports                          ; 12                   ; 19                    ; 151                            ; 2                              ;
+;     -- Output Ports                         ; 78                   ; 37                    ; 104                            ; 2                              ;
+;     -- Bidir Ports                          ; 4                    ; 0                     ; 0                              ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Registered Ports                            ;                      ;                       ;                                ;                                ;
+;     -- Registered Input Ports               ; 0                    ; 4                     ; 99                             ; 0                              ;
+;     -- Registered Output Ports              ; 0                    ; 26                    ; 95                             ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Port Connectivity                           ;                      ;                       ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0                    ; 1                     ; 68                             ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                    ; 1                     ; 0                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                    ; 0                     ; 0                              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                    ; 0                     ; 0                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0                    ; 1                     ; 35                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0                    ; 0                     ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                    ; 2                     ; 40                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                    ; 15                    ; 95                             ; 0                              ;
++---------------------------------------------+----------------------+-----------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++----------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                               ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Estimated Total logic elements              ; 3,898 / 68,416 ( 5 % ) ;
+;                                             ;                        ;
+; Total combinational functions               ; 3119                   ;
+; Logic element usage by number of LUT inputs ;                        ;
+;     -- 4 input functions                    ; 1965                   ;
+;     -- 3 input functions                    ; 719                    ;
+;     -- <=2 input functions                  ; 435                    ;
+;                                             ;                        ;
+; Logic elements by mode                      ;                        ;
+;     -- normal mode                          ; 2860                   ;
+;     -- arithmetic mode                      ; 259                    ;
+;                                             ;                        ;
+; Total registers                             ; 1588                   ;
+;     -- Dedicated logic registers            ; 1588                   ;
+;     -- I/O registers                        ; 0                      ;
+;                                             ;                        ;
+; I/O pins                                    ; 90                     ;
+; Total memory bits                           ; 56832                  ;
+; Embedded Multiplier 9-bit elements          ; 0                      ;
+; Total PLLs                                  ; 2                      ;
+;     -- PLLs                                 ; 2                      ;
+;                                             ;                        ;
+; Maximum fan-out node                        ; CLK50MHZ               ;
+; Maximum fan-out                             ; 552                    ;
+; Total fan-out                               ; 17025                  ;
+; Average fan-out                             ; 3.47                   ;
++---------------------------------------------+------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                      ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF        ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------------+
+; ram_4k_altera:sys_ram_2|altsyncram:altsyncram_component|altsyncram_5ge1:auto_generated|ALTSYNCRAM                                                                                                     ; AUTO ; Single Port      ; 4096         ; 8            ; --           ; --           ; 32768 ; None       ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_sb54:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 512          ; 47           ; 512          ; 47           ; 24064 ; None       ;
+; sys_rom_altera:sys_rom|altsyncram:altsyncram_component|altsyncram_7gb1:auto_generated|ALTSYNCRAM                                                                                                      ; AUTO ; ROM              ; 2048         ; 8            ; --           ; --           ; 16384 ; sysrom.mif ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Partition Merge
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Tue Feb 05 17:32:09 2019
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off de2_70 -c de2_70 --merge=on
+Warning (125092): Tcl Script File ../rtl/vram_altera.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE ../rtl/vram_altera.qip
+Info (35006): Using previously generated Fitter netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 37 of its 95 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 58 missing sources or connections.
+Info (35002): Resolved and merged 3 partition(s)
+Info (35026): Attempting to remove 8 I/O cell(s) that do not connect to top-level pins or have illegal connectivity
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_0_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_1_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_2_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_3_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_4_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_5_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_6_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_7_"
+Critical Warning (35033): Found I/O pins in lower-level partitions that are not connected in the top-level design
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_0_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_1_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_2_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_3_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_4_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_5_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_6_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_7_" is not connected to partition "Top"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 2 node(s), including 0 DDIO, 2 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "BUTTON_N[1]"
+    Warning (15610): No output dependent on input pin "BUTTON_N[2]"
+    Warning (15610): No output dependent on input pin "BUTTON_N[3]"
+Info (21057): Implemented 4133 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 78 output pins
+    Info (21060): Implemented 4 bidirectional pins
+    Info (21061): Implemented 3971 logic cells
+    Info (21064): Implemented 55 RAM segments
+    Info (21065): Implemented 2 PLLs
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4698 megabytes
+    Info: Processing ended: Tue Feb 05 17:32:13 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

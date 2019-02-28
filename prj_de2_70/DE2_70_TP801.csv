@@ -1,0 +1,159 @@
+# Copyright (C) 1991-2007 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version
+# File: D:\v1.21\DE2_70_TOP.csv
+# Generated on: Wed Nov 14 23:36:20 2007
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+From,To,Assignment Name,Value,Enabled
+,CLK50MHZ,Location,PIN_AD15,Yes
+,CLK27MHZ,Location,PIN_H15,Yes
+
+,AUD_ADCDAT,Location,PIN_E19,Yes
+,AUD_ADCLRCK,Location,PIN_F19,Yes
+,AUD_BCLK,Location,PIN_E17,Yes
+,AUD_DACDAT,Location,PIN_F18,Yes
+,AUD_DACLRCK,Location,PIN_G18,Yes
+,AUD_XCK,Location,PIN_D17,Yes
+,I2C_SCLK,Location,PIN_J18,Yes
+,I2C_SDAT,Location,PIN_H18,Yes
+
+,BUTTON_N[0],Location,PIN_T29,Yes
+,BUTTON_N[1],Location,PIN_T28,Yes
+,BUTTON_N[2],Location,PIN_U30,Yes
+#,BUTTON_N[3],Location,PIN_U29,Yes
+
+,LED[0],Location,PIN_W27,Yes
+,LED[1],Location,PIN_W25,Yes
+,LED[2],Location,PIN_W23,Yes
+,LED[3],Location,PIN_Y27,Yes
+,LED[4],Location,PIN_Y24,Yes
+,LED[5],Location,PIN_Y23,Yes
+,LED[6],Location,PIN_AA27,Yes
+,LED[7],Location,PIN_AA24,Yes
+,LED[8],Location,PIN_AJ6,Yes
+,LED[9],Location,PIN_AK5,Yes
+#,oLEDR[0],Location,PIN_AJ6,Yes
+#,oLEDR[1],Location,PIN_AK5,Yes
+#,oLEDR[2],Location,PIN_AJ5,Yes
+#,oLEDR[3],Location,PIN_AJ4,Yes
+#,oLEDR[4],Location,PIN_AK3,Yes
+#,oLEDR[5],Location,PIN_AH4,Yes
+#,oLEDR[6],Location,PIN_AJ3,Yes
+#,oLEDR[7],Location,PIN_AJ2,Yes
+#,oLEDR[8],Location,PIN_AH3,Yes
+#,oLEDR[9],Location,PIN_AD14,Yes
+#,oLEDR[10],Location,PIN_AC13,Yes
+#,oLEDR[11],Location,PIN_AB13,Yes
+#,oLEDR[12],Location,PIN_AC12,Yes
+#,oLEDR[13],Location,PIN_AB12,Yes
+#,oLEDR[14],Location,PIN_AC11,Yes
+#,oLEDR[15],Location,PIN_AD9,Yes
+#,oLEDR[16],Location,PIN_AD8,Yes
+#,oLEDR[17],Location,PIN_AJ7,Yes
+
+,PS2_KBCLK,Location,PIN_F24,Yes
+,PS2_KBDAT,Location,PIN_E24,Yes
+#,PS2_MSCLK,Location,PIN_D26,Yes
+#,PS2_MSDAT,Location,PIN_D25,Yes
+#,SWITCH[0],Location,PIN_AA23,Yes
+#,SWITCH[1],Location,PIN_AB26,Yes
+#,SWITCH[2],Location,PIN_AB25,Yes
+#,SWITCH[3],Location,PIN_AC27,Yes
+#,SWITCH[4],Location,PIN_AC26,Yes
+#,SWITCH[5],Location,PIN_AC24,Yes
+#,SWITCH[6],Location,PIN_AC23,Yes
+#,SWITCH[7],Location,PIN_AD25,Yes
+#,SWITCH[8],Location,PIN_AD24,Yes
+#,SWITCH[9],Location,PIN_AE27,Yes
+#,SWITCH[10],Location,PIN_W5,Yes
+#,SWITCH[11],Location,PIN_V10,Yes
+#,SWITCH[12],Location,PIN_U9,Yes
+#,SWITCH[13],Location,PIN_T9,Yes
+#,SWITCH[14],Location,PIN_L5,Yes
+#,SWITCH[15],Location,PIN_L4,Yes
+#,SWITCH[16],Location,PIN_L7,Yes
+#,SWITCH[17],Location,PIN_L8,Yes
+#,UART_CTS,Location,PIN_G22,Yes
+#,UART_RTS,Location,PIN_F23,Yes
+#,UART_RXD,Location,PIN_D21,Yes
+#,UART_TXD,Location,PIN_E21,Yes
+
+
+,HEX0_D[0],Location,PIN_AE8,Yes
+,HEX0_D[1],Location,PIN_AF9,Yes
+,HEX0_D[2],Location,PIN_AH9,Yes
+,HEX0_D[3],Location,PIN_AD10,Yes
+,HEX0_D[4],Location,PIN_AF10,Yes
+,HEX0_D[5],Location,PIN_AD11,Yes
+,HEX0_D[6],Location,PIN_AD12,Yes
+#,HEX0_DP,Location,PIN_AF12,Yes
+,HEX1_D[0],Location,PIN_AG13,Yes
+,HEX1_D[1],Location,PIN_AE16,Yes
+,HEX1_D[2],Location,PIN_AF16,Yes
+,HEX1_D[3],Location,PIN_AG16,Yes
+,HEX1_D[4],Location,PIN_AE17,Yes
+,HEX1_D[5],Location,PIN_AF17,Yes
+,HEX1_D[6],Location,PIN_AD17,Yes
+#,HEX1_DP,Location,PIN_AC17,Yes
+,HEX2_D[0],Location,PIN_AE7,Yes
+,HEX2_D[1],Location,PIN_AF7,Yes
+,HEX2_D[2],Location,PIN_AH5,Yes
+,HEX2_D[3],Location,PIN_AG4,Yes
+,HEX2_D[4],Location,PIN_AB18,Yes
+,HEX2_D[5],Location,PIN_AB19,Yes
+,HEX2_D[6],Location,PIN_AE19,Yes
+#,HEX2_DP,Location,PIN_AC19,Yes
+,HEX3_D[0],Location,PIN_P6,Yes
+,HEX3_D[1],Location,PIN_P4,Yes
+,HEX3_D[2],Location,PIN_N10,Yes
+,HEX3_D[3],Location,PIN_N7,Yes
+,HEX3_D[4],Location,PIN_M8,Yes
+,HEX3_D[5],Location,PIN_M7,Yes
+,HEX3_D[6],Location,PIN_M6,Yes
+#,HEX3_DP,Location,PIN_M4,Yes
+,HEX4_D[0],Location,PIN_P1,Yes
+,HEX4_D[1],Location,PIN_P2,Yes
+,HEX4_D[2],Location,PIN_P3,Yes
+,HEX4_D[3],Location,PIN_N2,Yes
+,HEX4_D[4],Location,PIN_N3,Yes
+,HEX4_D[5],Location,PIN_M1,Yes
+,HEX4_D[6],Location,PIN_M2,Yes
+#,HEX4_DP,Location,PIN_L6,Yes
+,HEX5_D[0],Location,PIN_M3,Yes
+,HEX5_D[1],Location,PIN_L1,Yes
+,HEX5_D[2],Location,PIN_L2,Yes
+,HEX5_D[3],Location,PIN_L3,Yes
+,HEX5_D[4],Location,PIN_K1,Yes
+,HEX5_D[5],Location,PIN_K4,Yes
+,HEX5_D[6],Location,PIN_K5,Yes
+#,HEX5_DP,Location,PIN_K6,Yes
+,HEX6_D[0],Location,PIN_H6,Yes
+,HEX6_D[1],Location,PIN_H4,Yes
+,HEX6_D[2],Location,PIN_H7,Yes
+,HEX6_D[3],Location,PIN_H8,Yes
+,HEX6_D[4],Location,PIN_G4,Yes
+,HEX6_D[5],Location,PIN_F4,Yes
+,HEX6_D[6],Location,PIN_E4,Yes
+#,HEX6_DP,Location,PIN_K2,Yes
+,HEX7_D[0],Location,PIN_K3,Yes
+,HEX7_D[1],Location,PIN_J1,Yes
+,HEX7_D[2],Location,PIN_J2,Yes
+,HEX7_D[3],Location,PIN_H1,Yes
+,HEX7_D[4],Location,PIN_H2,Yes
+,HEX7_D[5],Location,PIN_H3,Yes
+,HEX7_D[6],Location,PIN_G1,Yes
+#,HEX7_DP,Location,PIN_G2,Yes

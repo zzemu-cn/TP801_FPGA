@@ -1,0 +1,44 @@
+php gen_mif.php ..\rom\tp801a_TP_BUG_A_V2.7AD4.BIN sysrom.mif
+
+
+Ctrl+F12 RESET
+
+
+TP801 KEYBOARD
+
+PROG LOAD DUMP BP
+MEM  PORT REG  REG'
+7    8    9    A    NEXT
+4    5    6    B    MON
+1    2    3    C    SETP
+0    F    E    D    EXEC
+
+
+TP801A KEYBOARD
+
+2FB8 2FBA 2FBC 2FBE
+PROG MOVE PORT BP
+
+DISP REG' DUMP LOAD
+MEM  REG  LAST NEXT
+
+7    8    9    A    MON'
+H    L
+
+4    5    6    B    MON
+IX   IY   I
+
+1    2    3    C    SETP
+PC   SP   IFF
+
+0    F    E    D    EXEC
+
+
+PS/2 KEYBOARD
+
+P  [  ]  \
+K  L  ;  '
+7  8  9  A   N
+4  5  6  B   M
+1  2  3  C   ,
+0  F  E  D   .

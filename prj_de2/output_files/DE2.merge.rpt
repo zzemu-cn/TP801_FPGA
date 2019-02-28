@@ -1,0 +1,372 @@
+Partition Merge report for DE2
+Wed Feb 27 10:34:15 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge RAM Summary
+  8. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Partition Merge Summary                                                               ;
++------------------------------------+--------------------------------------------------+
+; Partition Merge Status             ; Successful - Wed Feb 27 10:34:15 2019            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; DE2                                              ;
+; Top-level Entity Name              ; TP801_TOP                                        ;
+; Family                             ; Cyclone II                                       ;
+; Total logic elements               ; 3,968 / 33,216 ( 12 % )                          ;
+;     Total combinational functions  ; 3,038 / 33,216 ( 9 % )                           ;
+;     Dedicated logic registers      ; 1,728 / 33,216 ( 5 % )                           ;
+; Total registers                    ; 1728                                             ;
+; Total pins                         ; 90 / 475 ( 19 % )                                ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 41,088 / 483,840 ( 8 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                   ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                                   ;
++------------------------------------+--------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Post-Fit          ; Post-Fit               ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                                                                                             ;
++----------------------+---------------+-----------+----------------+-------------------+---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Name                 ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                 ; Details                                                                                                                                                        ;
++----------------------+---------------+-----------+----------------+-------------------+---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; CPU_DI[0]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[0]~8                                       ; N/A                                                                                                                                                            ;
+; CPU_DI[0]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[0]~8                                       ; N/A                                                                                                                                                            ;
+; CPU_DI[1]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[1]~10                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[1]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[1]~10                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[2]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[2]~11                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[2]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[2]~11                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[3]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[3]~12                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[3]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[3]~12                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[4]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[4]~13                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[4]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[4]~13                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[5]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[5]~14                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[5]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[5]~14                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[6]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[6]~15                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[6]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[6]~15                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[7]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[7]~16                                      ; N/A                                                                                                                                                            ;
+; CPU_DI[7]            ; pre-synthesis ; connected ; Top            ; post-fit          ; CPU_DI[7]~16                                      ; N/A                                                                                                                                                            ;
+; InPort[0]            ; pre-synthesis ; connected ; Top            ; post-fit          ; InPort[0]~0                                       ; N/A                                                                                                                                                            ;
+; InPort[0]            ; pre-synthesis ; connected ; Top            ; post-fit          ; InPort[0]~0                                       ; N/A                                                                                                                                                            ;
+; InPort[1]            ; pre-synthesis ; connected ; Top            ; post-fit          ; InPort[1]~1                                       ; N/A                                                                                                                                                            ;
+; InPort[1]            ; pre-synthesis ; connected ; Top            ; post-fit          ; InPort[1]~1                                       ; N/A                                                                                                                                                            ;
+; InPort[2]            ; pre-synthesis ; connected ; Top            ; post-fit          ; InPort[2]~2                                       ; N/A                                                                                                                                                            ;
+; InPort[2]            ; pre-synthesis ; connected ; Top            ; post-fit          ; InPort[2]~2                                       ; N/A                                                                                                                                                            ;
+; InPort[3]            ; pre-synthesis ; connected ; Top            ; post-fit          ; InPort[3]~3                                       ; N/A                                                                                                                                                            ;
+; InPort[3]            ; pre-synthesis ; connected ; Top            ; post-fit          ; InPort[3]~3                                       ; N/A                                                                                                                                                            ;
+; InPort[4]            ; pre-synthesis ; connected ; Top            ; post-fit          ; InPort[4]~4                                       ; N/A                                                                                                                                                            ;
+; InPort[4]            ; pre-synthesis ; connected ; Top            ; post-fit          ; InPort[4]~4                                       ; N/A                                                                                                                                                            ;
+; InPort[5]            ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                                               ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; InPort[5]            ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                                               ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; InPort[6]            ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                                               ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; InPort[6]            ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                                               ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; InPort[7]            ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                                               ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; InPort[7]            ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                                               ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; LATCHED_IO_SEG[0]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[0]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[0]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[0]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[1]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[1]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[1]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[1]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[2]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[2]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[2]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[2]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[3]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[3]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[3]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[3]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[4]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[4]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[4]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[4]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[5]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[5]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[5]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[5]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[6]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[6]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[6]    ; pre-synthesis ; connected ; Top            ; post-fit          ; LATCHED_IO_SEG[6]                                 ; N/A                                                                                                                                                            ;
+; LATCHED_IO_SEG[7]    ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                                               ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; LATCHED_IO_SEG[7]    ; pre-synthesis ; missing   ; Top            ; post-fit          ; GND                                               ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; tv80s:Z80CPU|A[0]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[0]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[0]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[0]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[10]   ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[10]          ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[10]   ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[10]          ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[11]   ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[11]          ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[11]   ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[11]          ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[12]   ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[12]          ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[12]   ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[12]          ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[13]   ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[13]          ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[13]   ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[13]          ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[14]   ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[14]          ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[14]   ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[14]          ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[15]   ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[15]          ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[15]   ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[15]          ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[1]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[1]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[1]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[1]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[2]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[2]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[2]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[2]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[3]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[3]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[3]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[3]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[4]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[4]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[4]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[4]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[5]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[5]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[5]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[5]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[6]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[6]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[6]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[6]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[7]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[7]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[7]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[7]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[8]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[8]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[8]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[8]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[9]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[9]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|A[9]    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|A[9]           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[0]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~1                                            ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[0]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~1                                            ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[1]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~4                                            ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[1]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~4                                            ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[2]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~6                                            ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[2]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~6                                            ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[3]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~8                                            ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[3]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~8                                            ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[4]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~10                                           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[4]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~10                                           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[5]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~11                                           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[5]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~11                                           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[6]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~12                                           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[6]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~12                                           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[7]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~13                                           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|di[7]   ; pre-synthesis ; connected ; Top            ; post-fit          ; comb~13                                           ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[0] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[0]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[0] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[0]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[1] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[1]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[1] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[1]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[2] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[2]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[2] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[2]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[3] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[3]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[3] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[3]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[4] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[4]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[4] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[4]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[5] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[5]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[5] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[5]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[6] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[6]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[6] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[6]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[7] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[7]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|dout[7] ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|dout[7]        ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|int_n   ; pre-synthesis ; connected ; Top            ; post-fit          ; VCC                                               ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|int_n   ; pre-synthesis ; connected ; Top            ; post-fit          ; VCC                                               ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|iorq_n  ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|iorq_n~_wirecell                     ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|iorq_n  ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|iorq_n~_wirecell                     ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|m1_n    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|m1_n~_wirecell ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|m1_n    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|tv80_core:i_tv80_core|m1_n~_wirecell ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|mreq_n  ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|mreq_n~_wirecell                     ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|mreq_n  ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|mreq_n~_wirecell                     ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|rd_n    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|rd_n~_wirecell                       ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|rd_n    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|rd_n~_wirecell                       ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|reset_n ; pre-synthesis ; connected ; Top            ; post-fit          ; RESET_DE:RESET_DE|RESET_N~_wirecell               ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|reset_n ; pre-synthesis ; connected ; Top            ; post-fit          ; RESET_DE:RESET_DE|RESET_N~_wirecell               ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|wr_n    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|wr_n~_wirecell                       ; N/A                                                                                                                                                            ;
+; tv80s:Z80CPU|wr_n    ; pre-synthesis ; connected ; Top            ; post-fit          ; tv80s:Z80CPU|wr_n~_wirecell                       ; N/A                                                                                                                                                            ;
+; A_KEY_PRESSED        ; post-fitting  ; connected ; Top            ; post-fit          ; A_KEY_PRESSED                                     ; N/A                                                                                                                                                            ;
+; A_KEY_PRESSED        ; post-fitting  ; connected ; Top            ; post-fit          ; A_KEY_PRESSED                                     ; N/A                                                                                                                                                            ;
+; CPU_CLK              ; post-fitting  ; connected ; Top            ; post-fit          ; CPU_CLK                                           ; N/A                                                                                                                                                            ;
+; trap                 ; post-fitting  ; connected ; Top            ; post-fit          ; trap                                              ; N/A                                                                                                                                                            ;
+; trap                 ; post-fitting  ; connected ; Top            ; post-fit          ; trap                                              ; N/A                                                                                                                                                            ;
++----------------------+---------------+-----------+----------------+-------------------+---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                                         ;
++---------------------------------------------+----------------------+-----------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top                  ; sld_hub:auto_hub      ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+----------------------+-----------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 2685 / 33216 ( 8 % ) ; 146 / 33216 ( < 1 % ) ; 1160 / 33216 ( 3 % )           ; 0 / 33216 ( 0 % )              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Total combinational functions               ; 2495                 ; 122                   ; 421                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;                      ;                       ;                                ;                                ;
+;     -- 4 input functions                    ; 1627                 ; 53                    ; 238                            ; 0                              ;
+;     -- 3 input functions                    ; 546                  ; 32                    ; 125                            ; 0                              ;
+;     -- <=2 input functions                  ; 322                  ; 37                    ; 58                             ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Logic elements by mode                      ;                      ;                       ;                                ;                                ;
+;     -- normal mode                          ; 2302                 ; 114                   ; 384                            ; 0                              ;
+;     -- arithmetic mode                      ; 193                  ; 8                     ; 37                             ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Total registers                             ; 649                  ; 86                    ; 993                            ; 0                              ;
+;     -- Dedicated logic registers            ; 649 / 33216 ( 2 % )  ; 86 / 33216 ( < 1 % )  ; 993 / 33216 ( 3 % )            ; 0 / 33216 ( 0 % )              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Virtual pins                                ; 0                    ; 0                     ; 0                              ; 0                              ;
+; I/O pins                                    ; 90                   ; 0                     ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 70 ( 0 % )       ; 0 / 70 ( 0 % )        ; 0 / 70 ( 0 % )                 ; 0 / 70 ( 0 % )                 ;
+; Total memory bits                           ; 32768                ; 0                     ; 8320                           ; 0                              ;
+; Total RAM block bits                        ; 36864                ; 0                     ; 9216                           ; 0                              ;
+; JTAG                                        ; 1 / 1 ( 100 % )      ; 0 / 1 ( 0 % )         ; 0 / 1 ( 0 % )                  ; 0 / 1 ( 0 % )                  ;
+; PLL                                         ; 0 / 4 ( 0 % )        ; 0 / 4 ( 0 % )         ; 0 / 4 ( 0 % )                  ; 1 / 4 ( 25 % )                 ;
+; M4K                                         ; 8 / 105 ( 7 % )      ; 0 / 105 ( 0 % )       ; 2 / 105 ( 1 % )                ; 0 / 105 ( 0 % )                ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Connections                                 ;                      ;                       ;                                ;                                ;
+;     -- Input Connections                    ; 6                    ; 128                   ; 1418                           ; 1                              ;
+;     -- Registered Input Connections         ; 4                    ; 97                    ; 1141                           ; 0                              ;
+;     -- Output Connections                   ; 1376                 ; 170                   ; 2                              ; 5                              ;
+;     -- Registered Output Connections        ; 747                  ; 169                   ; 0                              ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Internal Connections                        ;                      ;                       ;                                ;                                ;
+;     -- Total Connections                    ; 12516                ; 827                   ; 5449                           ; 6                              ;
+;     -- Registered Connections               ; 5146                 ; 602                   ; 4085                           ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; External Connections                        ;                      ;                       ;                                ;                                ;
+;     -- Top                                  ; 0                    ; 119                   ; 1257                           ; 6                              ;
+;     -- sld_hub:auto_hub                     ; 119                  ; 16                    ; 163                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 1257                 ; 163                   ; 0                              ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 6                    ; 0                     ; 0                              ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Partition Interface                         ;                      ;                       ;                                ;                                ;
+;     -- Input Ports                          ; 12                   ; 19                    ; 187                            ; 1                              ;
+;     -- Output Ports                         ; 129                  ; 37                    ; 140                            ; 1                              ;
+;     -- Bidir Ports                          ; 4                    ; 0                     ; 0                              ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Registered Ports                            ;                      ;                       ;                                ;                                ;
+;     -- Registered Input Ports               ; 0                    ; 4                     ; 135                            ; 0                              ;
+;     -- Registered Output Ports              ; 0                    ; 26                    ; 131                            ; 0                              ;
+;                                             ;                      ;                       ;                                ;                                ;
+; Port Connectivity                           ;                      ;                       ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0                    ; 1                     ; 8                              ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                    ; 1                     ; 0                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                    ; 0                     ; 2                              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                    ; 0                     ; 0                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0                    ; 1                     ; 35                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0                    ; 0                     ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                    ; 2                     ; 40                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                    ; 15                    ; 131                            ; 0                              ;
++---------------------------------------------+----------------------+-----------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++-----------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                                ;
++---------------------------------------------+-------------------------+
+; Resource                                    ; Usage                   ;
++---------------------------------------------+-------------------------+
+; Estimated Total logic elements              ; 3,968 / 33,216 ( 11 % ) ;
+;                                             ;                         ;
+; Total combinational functions               ; 3038                    ;
+; Logic element usage by number of LUT inputs ;                         ;
+;     -- 4 input functions                    ; 1918                    ;
+;     -- 3 input functions                    ; 703                     ;
+;     -- <=2 input functions                  ; 417                     ;
+;                                             ;                         ;
+; Logic elements by mode                      ;                         ;
+;     -- normal mode                          ; 2800                    ;
+;     -- arithmetic mode                      ; 238                     ;
+;                                             ;                         ;
+; Total registers                             ; 1728                    ;
+;     -- Dedicated logic registers            ; 1728                    ;
+;     -- I/O registers                        ; 0                       ;
+;                                             ;                         ;
+; I/O pins                                    ; 90                      ;
+; Total memory bits                           ; 41088                   ;
+; Embedded Multiplier 9-bit elements          ; 0                       ;
+; Total PLLs                                  ; 1                       ;
+;     -- PLLs                                 ; 1                       ;
+;                                             ;                         ;
+; Maximum fan-out node                        ; CPU_CLK                 ;
+; Maximum fan-out                             ; 687                     ;
+; Total fan-out                               ; 17176                   ;
+; Average fan-out                             ; 3.45                    ;
++---------------------------------------------+-------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                      ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF        ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------------+
+; ram_4k_altera:sys_ram_2|altsyncram:altsyncram_component|altsyncram_5ge1:auto_generated|ALTSYNCRAM                                                                                                     ; AUTO ; Single Port      ; 4096         ; 8            ; --           ; --           ; 32768 ; None       ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_ob54:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 128          ; 65           ; 128          ; 65           ; 8320  ; None       ;
+; sys_rom_altera:sys_rom|altsyncram:altsyncram_component|altsyncram_7gb1:auto_generated|ALTSYNCRAM                                                                                                      ; AUTO ; ROM              ; 2048         ; 8            ; --           ; --           ; 16384 ; sysrom.mif ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Partition Merge
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Wed Feb 27 10:34:11 2019
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off DE2 -c DE2 --merge=on
+Info (35006): Using previously generated Fitter netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 123 of its 131 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 8 missing sources or connections.
+Info (35002): Resolved and merged 3 partition(s)
+Info (35026): Attempting to remove 8 I/O cell(s) that do not connect to top-level pins or have illegal connectivity
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_0_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_1_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_2_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_3_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_4_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_5_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_6_"
+    Info (35028): Failed to remove I/O cell "pre_syn.bp.CPU_DI_7_"
+Critical Warning (35033): Found I/O pins in lower-level partitions that are not connected in the top-level design
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_0_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_1_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_2_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_3_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_4_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_5_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_6_" is not connected to partition "Top"
+    Critical Warning (35034): I/O cell "pre_syn.bp.CPU_DI_7_" is not connected to partition "Top"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "BUTTON_N[1]"
+    Warning (15610): No output dependent on input pin "BUTTON_N[2]"
+    Warning (15610): No output dependent on input pin "BUTTON_N[3]"
+Info (21057): Implemented 4224 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 78 output pins
+    Info (21060): Implemented 4 bidirectional pins
+    Info (21061): Implemented 4045 logic cells
+    Info (21064): Implemented 73 RAM segments
+    Info (21065): Implemented 1 PLLs
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4698 megabytes
+    Info: Processing ended: Wed Feb 27 10:34:15 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
+
+
