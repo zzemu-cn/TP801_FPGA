@@ -26,8 +26,8 @@ Z80PIO 未完成
 
 
 
-![tp801a](pic\tp801a.png)
+![tp801a](pic/tp801a.png)
 
-![tp801a-de2-1](pic\tp801a-de2-1.png)
+![tp801a-de2-1](pic/tp801a-de2-1.png)
 
-![tp801a-de2-2](pic\tp801a-de2-2.png)
+![tp801a-de2-2](pic/tp801a-de2-2.png)
